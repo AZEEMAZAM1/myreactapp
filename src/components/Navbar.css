@@ -1,0 +1,15 @@
+/* filepath: /Users/user/Desktop/my-react-app/src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+  }
