@@ -5,7 +5,11 @@ import './Navbar.css';
 function Navbar() {
   return (
     <nav className="navbar">
-      <ul>
+      <div className="profile-container">
+        <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
+        <span className="profile-name">Muhammad Azeem</span>
+      </div>
+      <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
         </li>

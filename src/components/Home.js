@@ -79,22 +79,14 @@ function Home() {
 
   return (
     <div className="home">
-      <div className="navbar">
-        <div className="profile-container">
-          <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
-          <span className="profile-name">Your Name</span>
-        </div>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      {/* <div className="navbar">
+        <span className="profile-name">Muhammad Azeem</span>
+      </div> */}
       <div className="welcome-section">
         <h1>Welcome to My Portfolio</h1>
       </div>
       <div className="projects-section">
-        <h2>My Projects</h2>
+        <h2>My React Native Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <a 
