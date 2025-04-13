@@ -79,9 +79,11 @@ function Home() {
 
   return (
     <div className="home">
-      {/* <div className="navbar">
-        <span className="profile-name">Muhammad Azeem</span>
-      </div> */}
+      <div className="background-animation">
+        <div className="fish"></div>
+        <div className="fish"></div>
+        <div className="fish"></div>
+      </div>
       <div className="welcome-section">
         <h1>Welcome to My Portfolio</h1>
       </div>
