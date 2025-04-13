@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 
 function Home() {
-  const reactNativeProjects = [
+  const projects = [
     { 
       title: 'Meals To Do', 
       description: 'A meal planning app to organize your daily meals efficiently.', 
@@ -39,28 +39,40 @@ function Home() {
       image: '/images/unichat-course.jpg',
       link: 'https://github.com/AZEEMAZAM1/unichat-course.git'
     },
-  ];
-
-  const flutterProjects = [
     { 
-      title: 'Flutter Project 1', 
-      description: 'A sample Flutter project.', 
-      image: '/images/flutter-project1.jpg',
+      title: 'Weather Wizard', 
+      description: 'A weather forecasting app with real-time updates.', 
+      image: '/images/weather-wizard.jpg',
       link: '#'
     },
     { 
-      title: 'Flutter Project 2', 
-      description: 'Another sample Flutter project.', 
-      image: '/images/flutter-project2.jpg',
+      title: 'Fitness Tracker', 
+      description: 'An app to track your fitness goals and activities.', 
+      image: '/images/fitness-tracker.jpg',
       link: '#'
     },
-  ];
-
-  const xamarinProjects = [
     { 
-      title: 'Xamarin Project 1', 
-      description: 'A sample Xamarin project.', 
-      image: '/images/xamarin-project1.jpg',
+      title: 'Travel Buddy', 
+      description: 'A travel planning app to organize your trips.', 
+      image: '/images/travel-buddy.jpg',
+      link: '#'
+    },
+    { 
+      title: 'Recipe Finder', 
+      description: 'Find recipes based on ingredients you have.', 
+      image: '/images/recipe-finder.jpg',
+      link: '#'
+    },
+    { 
+      title: 'Expense Manager', 
+      description: 'An app to manage your daily expenses efficiently.', 
+      image: '/images/expense-manager.jpg',
+      link: '#'
+    },
+    { 
+      title: 'Language Learner', 
+      description: 'An app to help you learn new languages interactively.', 
+      image: '/images/language-learner.jpg',
       link: '#'
     },
   ];
@@ -68,7 +80,10 @@ function Home() {
   return (
     <div className="home">
       <div className="navbar">
-        <img src="/images/profile-pic.jpg" alt="Profile" className="profile-pic" />
+        <div className="profile-container">
+          <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
+          <span className="profile-name">Your Name</span>
+        </div>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -79,67 +94,23 @@ function Home() {
         <h1>Welcome to My Portfolio</h1>
       </div>
       <div className="projects-section">
-        <div className="major-cards">
-          <div className="major-card">
-            <h2>React Native Projects</h2>
-            <div className="projects-grid">
-              {reactNativeProjects.map((project, index) => (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="project-link" 
-                  key={index}
-                >
-                  <div className="project-card">
-                    <img src={project.image} alt={project.title} className="project-image" />
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="major-card">
-            <h2>Flutter Projects</h2>
-            <div className="projects-grid">
-              {flutterProjects.map((project, index) => (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="project-link" 
-                  key={index}
-                >
-                  <div className="project-card">
-                    <img src={project.image} alt={project.title} className="project-image" />
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="major-card">
-          <h2>Xamarin Projects</h2>
-          <div className="projects-grid">
-            {xamarinProjects.map((project, index) => (
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="project-link" 
-                key={index}
-              >
-                <div className="project-card">
-                  <img src={project.image} alt={project.title} className="project-image" />
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
-              </a>
-            ))}
-          </div>
+        <h2>My Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project, index) => (
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="project-link" 
+              key={index}
+            >
+              <div className="project-card">
+                <img src={project.image} alt={project.title} className="project-image" />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </div>

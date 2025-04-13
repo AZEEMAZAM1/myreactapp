@@ -1,57 +1,9 @@
 import React from 'react';
-import './Home.css';
+import './About.css';
 
-function Home() {
-  const reactNativeProjects = [
-    { 
-      title: 'Meals To Do', 
-      description: 'A meal planning app to organize your daily meals efficiently.', 
-      image: '/images/meals-to-do.jpg',
-      link: 'https://github.com/AZEEMAZAM1/MealsToGo.git'
-    },
-    { 
-      title: 'Crypto Tracker', 
-      description: 'Track cryptocurrency prices and market trends in real-time.', 
-      image: '/images/crypto-tracker.jpg',
-      link: 'https://github.com/AZEEMAZAM1/tracking-app.git'
-    },
-    { 
-      title: 'Flutec', 
-      description: 'A tech startup website showcasing innovative solutions.', 
-      image: '/images/flutec.jpg',
-      link: 'https://github.com/AZEEMAZAM1/ecommerce.git'
-    },
-    { 
-      title: 'BookDetail-UI', 
-      description: 'A user interface for browsing and managing book details.', 
-      image: '/images/bookdetail-ui.jpg',
-      link: 'https://github.com/AZEEMAZAM1/BookDetail-User-Interface.git'
-    },
-    { 
-      title: 'Ecommerce', 
-      description: 'An online shopping platform with a seamless user experience.', 
-      image: '/images/ecommerce.jpg',
-      link: 'https://github.com/AZEEMAZAM1/ecommerce.git'
-    },
-    { 
-      title: 'Unichat Course', 
-      description: 'A chat application designed for online course discussions.', 
-      image: '/images/unichat-course.jpg',
-      link: 'https://github.com/AZEEMAZAM1/unichat-course.git'
-    },
-  ];
-
-  const xamarinProjects = [
-    { 
-      title: 'Xamarin Project 1', 
-      description: 'A sample Xamarin project.', 
-      image: '/images/xamarin-project1.jpg',
-      link: '#'
-    },
-  ];
-
+function About() {
   return (
-    <div className="home">
+    <div className="about">
       <div className="navbar">
         <img src="/images/profile-pic.jpg" alt="Profile" className="profile-pic" />
         <ul className="nav-links">
@@ -60,55 +12,28 @@ function Home() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div className="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
-      </div>
-      <div className="projects-section">
-        <div className="major-cards">
-          <div className="major-card">
-            <h2>React Native Projects</h2>
-            <div className="projects-grid">
-              {reactNativeProjects.map((project, index) => (
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="project-link" 
-                  key={index}
-                >
-                  <div className="project-card">
-                    <img src={project.image} alt={project.title} className="project-image" />
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="major-card">
-          <h2>Xamarin Projects</h2>
-          <div className="projects-grid">
-            {xamarinProjects.map((project, index) => (
-              <a 
-                href={project.link} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="project-link" 
-                key={index}
-              >
-                <div className="project-card">
-                  <img src={project.image} alt={project.title} className="project-image" />
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
+      <div className="about-section">
+        <h1>About Me</h1>
+        <p>
+          I am a skilled React Native developer with extensive experience in building cross-platform mobile applications. 
+          I have worked on various projects that involve creating seamless user interfaces, integrating APIs, and managing backend services.
+        </p>
+        <p>
+          My expertise includes:
+        </p>
+        <ul>
+          <li>Developing mobile applications using React Native.</li>
+          <li>Integrating RESTful APIs and GraphQL for dynamic data handling.</li>
+          <li>Implementing state management using Redux and Context API.</li>
+          <li>Building secure and scalable backend systems using Node.js and Firebase.</li>
+          <li>Optimizing app performance and ensuring a smooth user experience.</li>
+        </ul>
+        <p>
+          I am passionate about creating high-quality applications that solve real-world problems and provide value to users.
+        </p>
       </div>
     </div>
   );
 }
 
-export default Home;
+export default About;
