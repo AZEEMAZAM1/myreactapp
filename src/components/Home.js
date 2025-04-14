@@ -85,10 +85,11 @@ function Home() {
         <div className="fish"></div>
       </div>
       <div className="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
+        <h1 className="welcome-title">Welcome to My Portfolio</h1>
+        <p className="welcome-subtitle">Discover my projects and journey as a React Developer!</p>
       </div>
       <div className="projects-section">
-        <h2>My React Native Projects</h2>
+        <h2 className="projects-title">My React Native Projects</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <a 
