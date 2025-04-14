@@ -14,7 +14,13 @@
 .profile-container {
   display: flex;
   align-items: center;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .profile-pic {
@@ -23,20 +29,28 @@
   border-radius: 50%;
   border: 2px solid #00bcd4;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
 }
 
 .profile-name {
   font-size: 1.2rem;
   font-weight: bold;
   color: #00bcd4;
+  transition: color 0.3s ease;
+}
+
+.profile-link:hover .profile-name {
+  color: #0199a8;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-links li a {

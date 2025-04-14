@@ -6,8 +6,15 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="profile-container">
-        <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
-        <span className="profile-name">Muhammad Azeem</span>
+        <a
+          href="https://uk.linkedin.com/in/muhammad-azeem5?trk=profile-badge"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="profile-link"
+        >
+          <img src="/images/profile.jpg" alt="Profile" className="profile-pic" />
+          <span className="profile-name">Muhammad Azeem</span>
+        </a>
       </div>
       <ul className="nav-links">
         <li>
