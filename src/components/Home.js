@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import AdSenseAd from './AdSenseAd'; // Import the AdSenseAd component
 
 function Home() {
   const projects = [
@@ -88,6 +89,10 @@ function Home() {
         <h1 className="welcome-title">Welcome to My Portfolio</h1>
         <p className="welcome-subtitle">Discover my projects and journey as a React Developer!</p>
       </div>
+      
+      {/* Add AdSenseAd component after the welcome section */}
+      <AdSenseAd adSlot="1234567890" adFormat="auto" adStyle={{ margin: '20px 0' }} />
+
       <div className="projects-section">
         <h2 className="projects-title">My React Native Projects</h2>
         <div className="projects-grid">
@@ -108,6 +113,9 @@ function Home() {
           ))}
         </div>
       </div>
+
+      {/* Add another AdSenseAd component at the bottom of the page */}
+      <AdSenseAd adSlot="9876543210" adFormat="auto" adStyle={{ margin: '20px 0' }} />
     </div>
   );
 }
