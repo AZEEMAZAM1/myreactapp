@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import AdSenseAd from './AdSenseAd'; // Import the AdSenseAd component
 
 function Navbar() {
   const [quote, setQuote] = useState('');
@@ -52,6 +53,10 @@ function Navbar() {
         <span className="time">{time}</span>
         <p className="quote">{quote}</p>
       </div>
+
+      {/* Add AdSenseAd component below the quote */}
+      <AdSenseAd adSlot="1234567890" adFormat="auto" adStyle={{ margin: '10px 0' }} />
+
       <ul className="nav-links">
         <li>
           <Link to="/">Home</Link>
@@ -66,6 +71,9 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
+
+      {/* Add another AdSenseAd component at the bottom of the navbar */}
+      <AdSenseAd adSlot="9876543210" adFormat="auto" adStyle={{ margin: '10px 0' }} />
     </nav>
   );
 }
