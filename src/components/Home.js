@@ -11,7 +11,7 @@ function Home() {
       link: 'https://github.com/AZEEMAZAM1/MealsToGo.git'
     },
     { 
-      title: 'Crypto Tracker', 
+      title: 'Crypto   Tracker', 
       description: 'Track cryptocurrency prices and market trends in real-time.', 
       image: '/images/crypto-tracker.jpg',
       link: 'https://github.com/AZEEMAZAM1/tracking-app.git'
