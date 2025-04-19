@@ -11,7 +11,7 @@ function Home() {
       link: 'https://github.com/AZEEMAZAM1/MealsToGo.git'
     },
     { 
-      title: 'Crypto   Tracker', 
+      title: 'Crypto Tracker', 
       description: 'Track cryptocurrency prices and market trends in real-time.', 
       image: '/images/crypto-tracker.jpg',
       link: 'https://github.com/AZEEMAZAM1/tracking-app.git'
@@ -80,19 +80,23 @@ function Home() {
 
   return (
     <div className="home">
+      {/* Background Section */}
       <div className="background-animation">
         <div className="fish"></div>
         <div className="fish"></div>
         <div className="fish"></div>
       </div>
+
+      {/* Welcome Section */}
       <div className="welcome-section">
         <h1 className="welcome-title">Welcome to My Portfolio</h1>
         <p className="welcome-subtitle">Discover my projects and journey as a React Developer!</p>
       </div>
-      
-      {/* Add AdSenseAd component after the welcome section */}
+
+      {/* AdSenseAd Component */}
       <AdSenseAd adSlot="1234567890" adFormat="auto" adStyle={{ margin: '20px 0' }} />
 
+      {/* Projects Section */}
       <div className="projects-section">
         <h2 className="projects-title">My React Native Projects</h2>
         <div className="projects-grid">
@@ -114,7 +118,7 @@ function Home() {
         </div>
       </div>
 
-      {/* Add another AdSenseAd component at the bottom of the page */}
+      {/* AdSenseAd Component */}
       <AdSenseAd adSlot="9876543210" adFormat="auto" adStyle={{ margin: '20px 0' }} />
     </div>
   );
